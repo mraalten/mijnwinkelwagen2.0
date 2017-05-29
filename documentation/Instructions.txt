@@ -1,0 +1,15 @@
+How to start the application:
+
+Backend can be started using spring-boot
+Steps:
+    - execute mvn clean install on top level
+    - switch to backend folder
+    - enter : mvn spring-boot:run
+    - check localhost:9200
+
+Frontend can be server using angular-cli
+Steps:
+    - switch to frontend/src/main/frontend
+    - make sure npm install was executed (only once)
+    - enter : ng serve
+    - check localhost:4200
