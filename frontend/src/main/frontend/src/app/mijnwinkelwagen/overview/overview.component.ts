@@ -2,9 +2,9 @@ import {Component} from "@angular/core";
 
 @Component({
     selector: 'mijnwinkelwagen-page',
-    templateUrl: './boodschappenlijst.component.html'
+    templateUrl: 'overview.component.html'
 })
 
-export class BoodschappenLijstComponent {
+export class OverviewComponent {
 
 }

@@ -1,0 +1,13 @@
+<div class="content">
+
+    <div class="produktgroep-item" *ngFor="let produktGroep of produktGroepen" data-ng-click="switchProduktGroep(produktGroep.id)">
+        <div>
+            <img src="/assets/images/{{produktGroep.imageNaam}}" class="produktgroep-image">
+        </div>
+        <div class="produktgroep-item-text">
+            {{produktGroep.naam}}
+        </div>
+        <br/>
+    </div>
+
+</div>

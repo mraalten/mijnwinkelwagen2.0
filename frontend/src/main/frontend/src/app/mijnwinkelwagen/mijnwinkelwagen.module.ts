@@ -2,30 +2,24 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import {MijnWinkelwagenPageComponent} from "./boodschappenlijst-page.component";
-import {BoodschappenLijstComponent} from "./overview/boodschappenlijst.component";
+import {MijnWinkelwagenComponent} from "./mijnwinkelwagen.component";
+import {OverviewComponent} from "./overview/overview.component";
+import {BoodschappenLijstComponent} from "./lijst/lijst.component";
+import {ProduktGroepenComponent} from "./produktgroepen/produktgroepen.component";
+import {LijstProduktGroepenComponent} from "./lijst-produktgroepen/lijst-produktgroepen.component";
 
 const mijnWinkelwagenRoutes: Routes = [
   {
     path: 'mijnwinkelwagen',
-    // component: MijnWinkelwagenPageComponent,
     children: [
       {
         path: '',
-        component: BoodschappenLijstComponent
+        component: LijstProduktGroepenComponent
+      },
+      {
+        path: 'list',
+        component: LijstProduktGroepenComponent
       }
-      // ,
-      // {
-      //   path: 'add',
-      //   component: CraftsmanAddComponent
-      // },
-      // {
-      //   path: 'edit/:id',
-      //   component: CraftsmanEditComponent,
-      //   resolve: {
-      //     craftsman: CraftsmanResolver
-      //   }
-      // }
     ]
   }
 ];
@@ -37,8 +31,11 @@ const mijnWinkelwagenRoutes: Routes = [
     RouterModule.forRoot(mijnWinkelwagenRoutes)
   ],
   declarations: [
-    MijnWinkelwagenPageComponent,
-    BoodschappenLijstComponent
+    MijnWinkelwagenComponent,
+    OverviewComponent,
+    BoodschappenLijstComponent,
+    ProduktGroepenComponent,
+    LijstProduktGroepenComponent
   ],
 })
 export class MijnWinkelwagenModule {}

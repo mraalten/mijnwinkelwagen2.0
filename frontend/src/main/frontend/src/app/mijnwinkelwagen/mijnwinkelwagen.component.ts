@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'mijnwinkelwagen-page',
-  templateUrl: './overview/boodschappenlijst.component.html'
+  templateUrl: 'overview/overview.component.html'
 })
-export class MijnWinkelwagenPageComponent {
+
+export class MijnWinkelwagenComponent {
   constructor() {}
 
 }

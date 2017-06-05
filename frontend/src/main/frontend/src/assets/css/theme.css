@@ -6,29 +6,6 @@
     background-color: #b0c4de;
 }
 
-.kolommen {
-    display: inline-flex;
-}
-
-.content {
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 25px;
-    background: #8AC007;
-    padding: 20px;
-    width: 590px;
-}
-
-.lijst-content {
-    display: inline-block;
-    border-radius: 25px;
-    background: #CBF76A;
-    /*border: 1px solid black;*/
-    margin-top: 15px;
-    padding: 5px;
-    width: 320px;
-}
-
 .button-right {
     float: right;
 }
@@ -37,39 +14,9 @@
 
 }
 
-.list-item {
-    border-bottom: 1px black dashed;
-    height: 34px;
-}
-
-.list-item-right {
-    text-align: right;
-    width: 60px;
-}
-
-.list-item-left {
-    text-align: left;
-}
-
-.produktgroep-item {
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 15px;
-    text-align: center;
-    border-radius: 25px;
-    background: #FCFCFC;
-    padding: 20px;
-    width: 140px;
-    height: 140px;
-}
 
 .produkt-image {
     width:  86px;
-    height: 100px;
-}
-
-.produktgroep-image {
-    width:  100px;
     height: 100px;
 }
 
@@ -95,17 +42,6 @@
     padding: 20px;
     width: 140px;
     height: 140px;
-}
-
-.produktgroep-item-text {
-    text-align: center;
-    border-radius: 25px;
-    margin-top: 8px;
-    background: #95D7ED;
-    display:-webkit-box;
-    -webkit-box-pack:center;
-    -webkit-box-align:center;
-    height: 40px;
 }
 
 .text-centered {
@@ -165,19 +101,6 @@
     padding: 10px 25px 10px 25px;
     font-size: 15px;
     width: 150px;
-}
-
-.maak-boodschappenlijst-button {
-    box-shadow: 0 5px #119e4d;
-    border-radius: 7px;
-    background: #F12121;
-    color: #ffffff;
-    font-size: 15px;
-    display: inline-block;
-    /*margin-left: 15px;*/
-    text-align: center;
-    /*width: 145px;*/
-    height: 43px;
 }
 
 .edit-image {
