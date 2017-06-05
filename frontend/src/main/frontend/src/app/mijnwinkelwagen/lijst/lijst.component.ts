@@ -14,8 +14,10 @@ export class BoodschappenLijstComponent {
     private items : WinkelwagenItem[];
 
     constructor() {
-        var produkt = new Produkt('Sla', 'St.');
+        var produkt = new Produkt(1, 'Sla', 'sla.jpg', 'St.');
         var item1 = new WinkelwagenItem(produkt, 1);
         this.items = [item1];
     }
+
+
 }

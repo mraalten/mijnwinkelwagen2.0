@@ -6,7 +6,9 @@ import {MijnWinkelwagenComponent} from "./mijnwinkelwagen.component";
 import {OverviewComponent} from "./overview/overview.component";
 import {BoodschappenLijstComponent} from "./lijst/lijst.component";
 import {ProduktGroepenComponent} from "./produktgroepen/produktgroepen.component";
-import {LijstProduktGroepenComponent} from "./lijst-produktgroepen/lijst-produktgroepen.component";
+import {LijstProduktGroepenComponent} from "./lijst/lijst-produktgroepen/lijst-produktgroepen.component";
+import {LijstProduktenComponent} from "./lijst/lijst-produkten/lijst-produkten.component";
+import {ProduktenComponent} from "./produkten/produkten.component";
 
 const mijnWinkelwagenRoutes: Routes = [
   {
@@ -16,9 +18,14 @@ const mijnWinkelwagenRoutes: Routes = [
         path: '',
         component: LijstProduktGroepenComponent
       },
+      // ,
+      // {
+      //   path: 'list',
+      //   component: LijstProduktGroepenComponent
+      // },
       {
-        path: 'list',
-        component: LijstProduktGroepenComponent
+        path: 'switchProduktGroep/:id',
+        component: LijstProduktenComponent
       }
     ]
   }
@@ -35,7 +42,9 @@ const mijnWinkelwagenRoutes: Routes = [
     OverviewComponent,
     BoodschappenLijstComponent,
     ProduktGroepenComponent,
-    LijstProduktGroepenComponent
+    ProduktenComponent,
+    LijstProduktGroepenComponent,
+    LijstProduktenComponent
   ],
 })
 export class MijnWinkelwagenModule {}
