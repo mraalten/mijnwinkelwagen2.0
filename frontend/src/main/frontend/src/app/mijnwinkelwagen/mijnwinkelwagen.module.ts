@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {MijnWinkelwagenComponent} from "./mijnwinkelwagen.component";
-import {OverviewComponent} from "./overview/overview.component";
 import {BoodschappenLijstComponent} from "./lijst/lijst.component";
 import {ProduktGroepenComponent} from "./produktgroepen/produktgroepen.component";
 import {LijstProduktGroepenComponent} from "./lijst/lijst-produktgroepen/lijst-produktgroepen.component";
@@ -18,11 +17,6 @@ const mijnWinkelwagenRoutes: Routes = [
         path: '',
         component: LijstProduktGroepenComponent
       },
-      // ,
-      // {
-      //   path: 'list',
-      //   component: LijstProduktGroepenComponent
-      // },
       {
         path: 'switchProduktGroep/:id',
         component: LijstProduktenComponent
@@ -39,7 +33,6 @@ const mijnWinkelwagenRoutes: Routes = [
   ],
   declarations: [
     MijnWinkelwagenComponent,
-    OverviewComponent,
     BoodschappenLijstComponent,
     ProduktGroepenComponent,
     ProduktenComponent,
