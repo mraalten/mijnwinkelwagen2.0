@@ -39,5 +39,8 @@ const mijnWinkelwagenRoutes: Routes = [
     LijstProduktGroepenComponent,
     LijstProduktenComponent
   ],
+  providers: [
+      MijnWinkelwagenComponent
+  ]
 })
 export class MijnWinkelwagenModule {}

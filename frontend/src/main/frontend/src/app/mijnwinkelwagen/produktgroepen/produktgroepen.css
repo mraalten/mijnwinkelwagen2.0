@@ -34,3 +34,7 @@
     -webkit-box-align:center;
     height: 40px;
 }
+
+.no-underline {
+    text-decoration: none;
+}

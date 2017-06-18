@@ -1,12 +1,12 @@
-package nl.aalten.ng2boot.ng2boot;
+package nl.aalten.mijnwinkelwagen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Ng2bootApplication {
+public class MijnWinkelwagenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ng2bootApplication.class, args);
+		SpringApplication.run(MijnWinkelwagenApplication.class, args);
 	}
 }
