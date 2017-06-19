@@ -18,7 +18,7 @@ const mijnWinkelwagenRoutes: Routes = [
         component: LijstProduktGroepenComponent
       },
       {
-        path: 'switchProduktGroep/:id',
+        path: 'switchProduktGroep/:produktGroepId',
         component: LijstProduktenComponent
       }
     ]

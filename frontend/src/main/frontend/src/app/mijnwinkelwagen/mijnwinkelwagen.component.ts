@@ -1,5 +1,5 @@
 import {Component, Injectable} from '@angular/core';
-import {Http, Response, RequestOptions} from "@angular/http";
+import {Http, Response, RequestOptions, Headers} from "@angular/http";
 import {ProduktGroep} from "./produktgroep";
 import {Observable} from "rxjs";
 import 'rxjs/Rx';
@@ -27,10 +27,12 @@ export class MijnWinkelwagenComponent {
   }
 
     public getProdukten(produktGroepId: number) {
-        let params: URLSearchParams = new URLSearchParams();
-        params.set('produktGroepId', produktGroepId.toString());
+        let searchParams = new URLSearchParams();
+        searchParams.append('produktGroepId', produktGroepId.toString());
+        let options = new RequestOptions({params: searchParams.toString() });
+
         return this.http
-            .get(this.produktenUrl, {search: params})
+            .get(this.produktenUrl, options)
             .map(response => {
                 return response.json();
             });

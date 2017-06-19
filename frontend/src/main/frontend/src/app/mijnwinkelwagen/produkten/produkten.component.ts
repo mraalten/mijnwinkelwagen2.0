@@ -22,7 +22,7 @@ export class ProduktenComponent implements OnInit{
     ) {}
 
     ngOnInit(): void {
-        this.route.params.subscribe(params => this.loadProdukten(params['id']));
+        this.route.params.subscribe(params => this.loadProdukten(params['produktGroepId']));
     }
 
     toevoegenProduktWinkelwagen(produktId: number) {
