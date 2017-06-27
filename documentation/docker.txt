@@ -1,0 +1,19 @@
+Docker container:
+
+docker run --detach --name=emera-mysql --env="MYSQL_ROOT_PASSWORD=root" --publish 6603:3306 mysql
+
+docker rm emera-mysql
+
+* Controleer settings van container
+-----------------------------------
+docker inspect emera-mysql
+
+* Check welke containers draaien of welke containers er aanwezig zijn maar niet draaien
+---------------------------------------------------------------------------------------
+docker ps of docker ps -a
+
+docker stop emera-mysql
+
+
+Aanvullende dokumentatie:
+https://severalnines.com/blog/mysql-docker-containers-understanding-basics
