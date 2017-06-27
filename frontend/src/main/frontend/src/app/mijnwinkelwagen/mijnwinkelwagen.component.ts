@@ -13,6 +13,7 @@ import 'rxjs/Rx';
 export class MijnWinkelwagenComponent {
   private produktGroepenUrl = 'http://localhost:9200/ophalenproduktgroepen';
   private produktenUrl = 'http://localhost:9200/ophalenprodukten';
+  private toevoegenProduktWinkelwagenUrl = 'http://localhost:9200/toevoegenproduktWinkelwagen';
 
   constructor(
       private http: Http
@@ -36,6 +37,16 @@ export class MijnWinkelwagenComponent {
             .map(response => {
                 return response.json();
             });
+    }
+
+    public toevoegenProduktAanWinkelwagen(produktId: number) {
+      alert('in service: ' + produktId);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let searchParams = new URLSearchParams();
+        searchParams.append('produktId', produktId.toString());
+        let options = new RequestOptions({params: searchParams.toString() });
+        return this.http
+            .post(this.toevoegenProduktWinkelwagenUrl, options, headers).subscribe;
     }
 
 }

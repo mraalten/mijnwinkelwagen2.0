@@ -27,6 +27,7 @@ export class ProduktenComponent implements OnInit{
 
     toevoegenProduktWinkelwagen(produktId: number) {
         this.produktId = produktId;
+        this.mijnwinkelwagenComponent.toevoegenProduktAanWinkelwagen(produktId);
         setTimeout(() => this.produktId = undefined, 100);
     }
 
@@ -36,11 +37,6 @@ export class ProduktenComponent implements OnInit{
             produkten => this.produkten = produkten,
             err => {console.log(err)}
         );
-        // if (produktGroepId == 1) {
-        //     this.produkten = [new Produkt(1, 'Sla', 'sla.jpg', 'St.')];
-        // } else if (produktGroepId == 2) {
-        //     this.produkten = [new Produkt(2, 'Bananen', 'bananen.jpg', 'Tros')];
-        // }
     }
 }
 

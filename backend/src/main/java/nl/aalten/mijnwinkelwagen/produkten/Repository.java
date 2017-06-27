@@ -16,7 +16,9 @@ import nl.aalten.mijnwinkelwagen.domain.Eenheid;
 import nl.aalten.mijnwinkelwagen.domain.Item;
 import nl.aalten.mijnwinkelwagen.domain.Produkt;
 import nl.aalten.mijnwinkelwagen.domain.ProduktGroep;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Repository {
     public static final String PERSISTENCE_UNIT_NAME = "mijnwinkelwagen";
     public static final String SQL_FOR_PRODUKTGROEPEN = "SELECT pg from ProduktGroep pg";

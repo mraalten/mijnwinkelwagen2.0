@@ -18,11 +18,6 @@ export class ProduktGroepenComponent {
         private router : Router,
         private mijnwinkelwagenComponent: MijnWinkelwagenComponent
     ) {
-        // this.produktGroepen = [
-        //     new ProduktGroep(1, "groenten-fruit.jpg", "Groenten"),
-        //     new ProduktGroep(2, "fruit.jpg", "Fruit"),
-        //     new ProduktGroep(3, "potgroenten.jpg", "Potgroenten"),
-        //     new ProduktGroep(4, "zuivel.jpg", "Zuivel/boter")];
     }
 
     ngOnInit(): void {

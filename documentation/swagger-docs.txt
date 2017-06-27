@@ -1,0 +1,5 @@
+DOCS: see http://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29
+of http://swagger.io/swagger-ui/
+
+download swagger cli:
+mac:  brew install swagger-codegen
