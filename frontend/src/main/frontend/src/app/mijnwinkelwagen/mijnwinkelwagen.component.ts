@@ -11,7 +11,7 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class MijnWinkelwagenComponent {
-  private produktGroepenUrl = 'http://localhost:9200/ophalenproduktgroepen';
+  private produktGroepenUrl = 'http://localhost:9200/mijnwinkelwagen/ophalenproduktgroepen';
   private produktenUrl = 'http://localhost:9200/ophalenprodukten';
   private toevoegenProduktWinkelwagenUrl = 'http://localhost:9200/toevoegenproduktWinkelwagen';
 

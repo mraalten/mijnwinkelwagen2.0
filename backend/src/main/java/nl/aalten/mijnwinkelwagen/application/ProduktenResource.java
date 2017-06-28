@@ -1,14 +1,12 @@
 package nl.aalten.mijnwinkelwagen.application;
 
-import java.util.List;
-
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
 
 import io.swagger.annotations.Api;
-import nl.aalten.mijnwinkelwagen.domain.ProduktGroep;
 import nl.aalten.mijnwinkelwagen.produkten.Repository;
 import org.springframework.stereotype.Component;
 
@@ -28,7 +26,10 @@ public class ProduktenResource {
     @GET
     @Path("/ophalenproduktgroepen")
     @Produces("application/json")
-    public List<ProduktGroep> getProduktGroepen() {
-        return repository.getProduktGroepen();
+    public Response getProduktGroepen() {
+        return Response
+            .ok(repository.getProduktGroepen())
+            .header("Access-Control-Allow-Origin", "*")
+            .build();
     }
 }

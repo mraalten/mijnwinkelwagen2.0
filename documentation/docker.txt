@@ -15,5 +15,11 @@ docker ps of docker ps -a
 docker stop emera-mysql
 
 
+Command prompt naar Docker-container
+--------------------------------------
+docker exec -it emera-mysql sh
+
 Aanvullende dokumentatie:
 https://severalnines.com/blog/mysql-docker-containers-understanding-basics
+
+https://severalnines.com/blog/mysql-docker-building-container-image
